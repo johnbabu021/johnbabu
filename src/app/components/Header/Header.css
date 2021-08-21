@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
+
+
+.header{
+
+    width: 100%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+height:50px;
+box-shadow: 0 1px 2px var(--shadow--strong);
+
+}
+.logo__container{
+flex:0.3;
+
+    margin-left:40px;
+
+}
+
+.header__logo{
+    width: 30px;
+    object-fit: cover;
+    height: 30px;
+    border-radius: 50%;
+}
+.pages{
+    flex:0.6;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    font-family: 'Cormorant Upright', serif;
+}
+.pages>p{
+    cursor: pointer;
+}
+.hamburger{
+    flex:0.1;
+    display:none;
+   height: 0%;
+    position:relative;
+    height: 100%;
+
+}
+.hamburger__line{
+    width:25px;
+    position:absolute;
+    right:40px;
+    top:15px;
+    text-align: left;
+    height:2px;
+    background-color: var(--gray--color);
+    transition: 0.5s ease-in-out;
+
+   
+}
+
+.open{
+    transform-origin: -10px;
+    z-index: 999;
+    top:10px;
+    transform: rotate(45deg) ;
+    
+}
+
+.open::after{
+   background-color:transparent !important;
+}
+.open::before{
+    transform: rotate(-90deg) translateY(-1px) translateX(12px);
+}
+
+.hamburger__line::after{
+    position: absolute;
+    content:"";
+    top:7px;
+    width:18px;
+    background-color: var(--gray--color);
+    height: 2px;
+}
+.hamburger__line::before{
+    position: absolute;
+    content:"";
+    top:14px;
+    width:25px;
+    background-color: var(--gray--color);
+    height: 2px;
+}
+.ham{
+    display: flex;
+    width: 150px;
+    padding-top:50px;
+    position: fixed;
+    border-radius: 10px;
+    background-color: white;
+    height: 500px;
+    transition:0.5s ease-in-out;
+    top:0;
+    right: 0;
+    flex-direction: column;
+}
+.trans{
+    transform: translateX(100%);
+}
+
+@media (max-width:900px){
+.hamburger{
+    display: block;
+}
+.pages{
+    display: none;
+}
+
+}

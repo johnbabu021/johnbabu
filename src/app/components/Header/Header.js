@@ -1,0 +1,48 @@
+import React, { useState } from 'react'
+import './Header.css'
+function Header() {
+    const [hamburger, setHamburger] = useState(false)
+    const burgerControler = () => {
+        setHamburger(!hamburger)
+    }
+    return (
+        <div className="header">
+
+            <div className="logo__container">
+                <img className="header__logo" src="images/me.jpeg" alt="" />
+
+            </div>
+
+            <div className="pages">
+                <p>Home</p>
+                <p>Portfolio</p>
+                <p>Bolg</p>
+                <p>Contact</p>
+                <p>Resume</p>
+
+            </div>
+
+            <div className="hamburger" onClick={burgerControler}>
+                <div className={`hamburger__line ${hamburger && 'open'}`}>
+
+
+                </div>
+
+
+
+            </div>
+            <div className={`ham ${hamburger ? 'ham__item' : 'trans'}`}>
+                <p>Home</p>
+                <p>Portfolio</p>
+                <p>Bolg</p>
+                <p>Contact</p>
+                <p>Resume</p>
+
+            </div>
+
+
+        </div>
+    )
+}
+
+export default Header
