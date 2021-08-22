@@ -1,0 +1,37 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: var(--deep--gray);
+    display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+color:var(--gray--color)
+
+}
+.footer::after{
+    position: absolute;
+    top:20px;
+    content:"";
+    width: 20vw;
+    opacity: 0.4;
+    height:2px;
+    background-color:var(--shadow--strong);
+}
+.footer__left{
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+.footer__left>.MuiSvgIcon-root{
+    transition:0.4s ease-in
+}
+.footer__left>.MuiSvgIcon-root:hover{
+    color:var(--morph_color);
+
+}
+.footer__right{
+    font-size:20px !important;
+    font-weight: 800;
+}

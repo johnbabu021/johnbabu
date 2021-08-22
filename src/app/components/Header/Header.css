@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
-
 
 .header{
 
@@ -7,7 +5,11 @@
 display: flex;
 justify-content:space-between;
 align-items: center;
+position: sticky;
+top:0;
 height:50px;
+background-color: white;
+z-index: 999;
 box-shadow: 0 1px 2px var(--shadow--strong);
 
 }
@@ -22,6 +24,7 @@ flex:0.3;
     width: 30px;
     object-fit: cover;
     height: 30px;
+    cursor:pointer;
     border-radius: 50%;
 }
 .pages{
@@ -29,15 +32,21 @@ flex:0.3;
     display: flex;
     gap:20px;
     justify-content: center;
-    font-family: 'Cormorant Upright', serif;
 }
 .pages>p{
     cursor: pointer;
+    transition:0.2s ease-in-out;
+    border-color: var(--morph_color);
+    border:none;
 }
+.pages>p:hover{
+    border-bottom:2px solid var(--morph_color);
+}
+
 .hamburger{
     flex:0.1;
     display:none;
-   height: 0%;
+   height: 100%;
     position:relative;
     height: 100%;
 
@@ -45,7 +54,7 @@ flex:0.3;
 .hamburger__line{
     width:25px;
     position:absolute;
-    right:40px;
+    right:20px;
     top:15px;
     text-align: left;
     height:2px;
@@ -91,19 +100,37 @@ flex:0.3;
     width: 150px;
     padding-top:50px;
     position: fixed;
-    border-radius: 10px;
-    background-color: white;
-    height: 500px;
+    color:white;
+    padding-left: 20px;
+    border-radius: 0 0 0 20px;
+    background-color: var(--deep--gray);
+    height: 350px;
     transition:0.5s ease-in-out;
     top:0;
     right: 0;
     flex-direction: column;
 }
+
+.ham>p{
+    cursor: pointer;
+    border:none;
+    transition:0.3s ease-in-out;
+    position: relative;
+}
+
+
+
+
+.ham>p:hover{
+
+border-bottom: 2px solid var(--morph_color);
+
+}
 .trans{
     transform: translateX(100%);
 }
 
-@media (max-width:900px){
+@media (max-width:700px){
 .hamburger{
     display: block;
 }

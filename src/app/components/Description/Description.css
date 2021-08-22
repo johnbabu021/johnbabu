@@ -1,0 +1,26 @@
+.description{
+    background-color:var(--deep--gray);
+        padding:30px 10px;
+}
+.description__info{
+    width: 80vw;
+    margin:20px 0;
+    height: 300px;
+    color:white;
+    word-wrap: break-word;
+    border:3px solid var(--morph_color);
+    transition:0.5s ease-in-out;
+}
+.description__info:hover{
+transform: scale(0.99);
+
+}
+.text__head{
+    padding-left: 20px;
+}
+.description__info>p{
+    padding-left: 20px;
+}
+.right{
+    margin-left: auto;
+}

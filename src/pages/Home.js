@@ -1,11 +1,14 @@
 import React from 'react'
-import Header from '../app/components/Header/Header'
+import Contact from '../app/components/Contact/Contact'
+import Description from '../app/components/Description/Description'
+import Section from '../app/components/Section/Section'
 
 function Home() {
     return (
         <div>
-              <Header />
-    
+            <Section />
+            <Description />
+            <Contact />
         </div>
     )
 }

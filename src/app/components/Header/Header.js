@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import './Header.css'
+import ROUTES from '../../../constants/Routes'
 function Header() {
+    const history = useHistory()
     const [hamburger, setHamburger] = useState(false)
     const burgerControler = () => {
         setHamburger(!hamburger)
     }
+
     return (
         <div className="header">
 
             <div className="logo__container">
-                <img className="header__logo" src="images/me.jpeg" alt="" />
+                <img className="header__logo" src="images/me.jpeg" alt="" onClick={() => history.push(ROUTES.DASHBOARD)} />)
 
             </div>
 
@@ -24,8 +28,6 @@ function Header() {
 
             <div className="hamburger" onClick={burgerControler}>
                 <div className={`hamburger__line ${hamburger && 'open'}`}>
-
-
                 </div>
 
 
