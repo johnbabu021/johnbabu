@@ -1,6 +1,5 @@
 
 .header{
-
     width: 100%;
 display: flex;
 justify-content:space-between;
@@ -38,6 +37,7 @@ flex:0.3;
     transition:0.2s ease-in-out;
     border-color: var(--morph_color);
     border:none;
+    border:2px solid transparent;
 }
 .pages>p:hover{
     border-bottom:2px solid var(--morph_color);
@@ -116,6 +116,7 @@ flex:0.3;
     border:none;
     transition:0.3s ease-in-out;
     position: relative;
+    border-bottom: 2px solid transparent;
 }
 
 

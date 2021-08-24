@@ -6,7 +6,9 @@
   --gray--color:gray;
   --morph_color: hsl(180deg 100% 40% / 20%);
   --deep--gray:rgb(57, 62, 70);
-  --border-color:rgba(110,0,255,0.5)
+  --border-color:rgba(110,0,255,0.5);
+  --green-color:#3fbf86;
+  --background-color:linear-gradient(130deg,#27292e,#121213)
 }
 
 

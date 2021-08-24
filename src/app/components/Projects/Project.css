@@ -1,0 +1,131 @@
+.project{
+ min-height:100vh;  
+ width:100vw;
+ background-color: var(--deep--gray); 
+ display: flex;
+ align-items: center;
+ gap:50px;
+ color:white;
+}
+.project__sidebar{
+flex: 0.1;
+}
+
+.project__sidebar>p{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    text-align: left;
+    /* border: 2px solid transparent;
+    background-image:var(--background-color);
+    border-radius: 20px; */
+}
+
+.project__sidebar>p:hover:after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    transition: 0.5s ease-in-out;
+    top:5px;
+    left:-20px;
+    height: 25px;
+    background-color: var(--green-color);
+    
+    }
+
+.project__sidebar>p>img{
+    width: 30px;
+    padding-right: 25px;
+    flex:0.1;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.project__contents{
+    flex: 0.5;
+    display: flex;
+    gap:5rem;
+    align-items: center;
+    justify-content: center;
+}
+.arrow__btn{
+    flex:0.1;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+    
+}
+.button{
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color:black;
+}
+.arrow__btn>.MuiSvgIcon-root:hover{
+    opacity: 0.9;
+}
+.arrow__btn>.MuiSvgIcon-root:active{
+    transform: scale(0.9);
+}
+
+.project__details{
+flex:0.7;
+
+}
+
+.side{
+    position: relative;
+}
+
+.side::after{
+position: absolute;
+content: "";
+width: 3px;
+top:5px;
+left:-20px;
+height: 25px;
+background-color: var(--green-color);
+
+}
+
+.disable{
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+.disable:hover{
+    opacity: 0.1 !important;
+}
+.image__container{
+    align-self: flex-end;
+   
+}
+.image__container>img{
+    max-width: 192px;
+    max-height: 192px;
+    object-fit: contain;
+}
+@media (max-width:860px){
+    .project{
+        gap:0;
+    }
+}
+
+
+@media (max-width:700px){
+    .project{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .project__contents{
+        flex-direction: column;
+    }
+    .image__container{
+        align-self: flex-start;
+    }
+    .arrow__btn{
+        flex-direction: row;
+    }
+   
+}

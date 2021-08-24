@@ -1,0 +1,117 @@
+.about{
+    display: flex;
+    overflow-x:hidden;
+min-height: 100vh;
+}
+.about__left{
+    background-color:white ;
+flex:0.7;
+text-align: center;
+
+}
+
+.about__right{
+    flex: 0.3;
+    position: relative;
+    background-color: var(--gray--color);
+}
+.about__right>h6{
+    display: none;
+}
+.about__right>img{
+    position: absolute;
+    top:40px;
+    object-fit: contain;
+    left:-100px;
+    width: 500px;
+    height: 500px;
+}
+.about__sidebar{
+    padding-top:60px;
+    padding-right: 20px;
+}
+.about__sidebar>p{
+    position: relative;
+    cursor:pointer;
+
+}
+
+.about__sidebar>p:hover:after{
+    position: absolute;
+    content:"";
+    left:-20px;
+    top:0;
+    background-color: var(--green-color);
+    width: 4px;
+    height: 25px;
+    
+}
+.open__about{
+    position: relative;
+    color:var(--green-color);
+font-size: 22px;
+font-weight: bold;
+}
+.open__about::after{
+    position: absolute;
+    content:"";
+    left:-20px;
+    top:0;
+    background-color: var(--green-color);
+    width: 4px;
+    height: 25px;
+}
+
+@media (max-width:900px){
+    .about{
+        background-color: var(--gray--color);
+    }
+    .about__left{
+        display: none;
+    }
+    .about__sidebar{
+        display: none;
+    }
+    .about__right{
+        background-color: white;
+        flex:0.5;
+    }
+    .about__right>img{
+    left:200px;
+    }
+    .about__sidebar{
+        background-color: white;
+    }
+    .about__show{
+        width: 80px;
+        height:90px;
+        margin-left: -35px;
+        margin-top: -45px;
+        transform: rotate(45deg);
+        background-color: gray;
+        transition: 0.5s ease-in-out;
+        cursor:pointer;
+    }
+    .about__right>h6{
+        display: block;
+    position: absolute;
+    top:3px;
+    left:3px;
+    transform: rotate(-45deg);
+    padding-left: 20px;
+    }
+    .about__show:hover{
+        background-color: var(--deep--gray);
+    }
+   
+    
+    
+}
+@media (max-width:600px){
+    .about__right>img{
+        left:50%
+    }
+  
+
+
+}

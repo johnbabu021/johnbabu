@@ -5,6 +5,7 @@ import ROUTES from './constants/Routes'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './app/components/Header/Header';
 import Footer from './app/components/Footer/Footer';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           <Route path={ROUTES.DASHBOARD} exact>
             <Home />
 
+          </Route>
+          <Route path={ROUTES.PORTFOLIO} >
+            <Portfolio />
           </Route>
         </Switch>
 

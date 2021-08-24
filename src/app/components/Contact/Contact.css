@@ -82,9 +82,7 @@ color:var(--deep--gray)
     }
     
     .contact__right>img{
-        max-height: 400px !important;
-max-width: 400px;
-z-index: 999;
+       display: none;
     }
     .contact__left{
 width: 200px;

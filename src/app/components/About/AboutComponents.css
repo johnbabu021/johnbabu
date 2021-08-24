@@ -1,0 +1,36 @@
+.about__details{
+    margin-left: 20px;
+}
+
+
+.about__details>h5,p,.basic__info{
+    text-align: left;
+    margin-left: 40px;
+}
+.about__details>p{
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    border-right: 2px solid gray;
+    transition: 2 ease-in-out;
+}
+
+.about__details>p:hover{
+    transform: scale(0.99);
+}
+.about__details>p::-webkit-scrollbar{
+    display: hidden;
+}
+
+@media (max-width:600px){
+    .about__details>p{
+        max-width: 60vw;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        
+       overflow-x: scroll;
+    }
+  
+}

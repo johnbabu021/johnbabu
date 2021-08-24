@@ -1,0 +1,58 @@
+.banner{
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--deep--gray);
+    color: rgb(121, 120, 120);
+    margin:0;
+    overflow-x:hidden;
+
+}
+.about__portfolio{
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+color: white;
+margin:auto ;
+font-size: 25px;
+text-transform: uppercase;
+text-align: center;
+line-height: 2rem;
+padding-top: 5rem;
+}
+.get__btn{
+    background-color: var(--morph_color) ;
+    color: white ;
+    padding: 8px ;
+    border-radius: 5px;
+    margin:50px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    border:2px solid transparent;
+
+}
+.get__btn:hover{
+background-color: transparent;
+border:2px solid var(--morph_color)
+
+}
+.mail__send{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:800px;
+    margin-top: 20px;
+}
+.resume{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+@media (max-width:700px){
+   .mail__send{
+       flex-direction:column;
+   }
+}

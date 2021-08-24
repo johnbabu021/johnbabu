@@ -12,6 +12,7 @@ min-width: 200px;
 }
 .section__text__area>h2{
     position: relative;
+    margin-left: 40px;
 
 }
 .section__text__area>p{

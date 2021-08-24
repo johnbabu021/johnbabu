@@ -8,7 +8,6 @@ function Header() {
     const burgerControler = () => {
         setHamburger(!hamburger)
     }
-
     return (
         <div className="header">
 
@@ -18,8 +17,13 @@ function Header() {
             </div>
 
             <div className="pages">
-                <p>Home</p>
-                <p>Portfolio</p>
+                <p
+                    onClick={() => history.push(ROUTES.DASHBOARD)}
+
+                >Home</p>
+                <p
+                    onClick={() => history.push(ROUTES.PORTFOLIO)}
+                >Portfolio</p>
                 <p>Bolg</p>
                 <p>Contact</p>
                 <p>Resume</p>
@@ -34,8 +38,13 @@ function Header() {
 
             </div>
             <div className={`ham ${hamburger ? 'ham__item' : 'trans'}`}>
-                <p>Home</p>
-                <p>Portfolio</p>
+                <p
+                    onClick={() => history.push(ROUTES.DASHBOARD)}
+                >Home</p>
+                <p
+                    onClick={() => history.push(ROUTES.PORTFOLIO)}
+
+                >Portfolio</p>
                 <p>Bolg</p>
                 <p>Contact</p>
                 <p>Resume</p>
