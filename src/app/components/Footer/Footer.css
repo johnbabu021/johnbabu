@@ -35,3 +35,9 @@ color:var(--gray--color)
     font-size:20px !important;
     font-weight: 800;
 }
+@media (max-width:400px){
+    .footer{
+        padding-top:20px;
+        flex-direction: column;
+    }
+}

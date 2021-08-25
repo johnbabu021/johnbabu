@@ -7,6 +7,15 @@
  gap:50px;
  color:white;
 }
+.project:hover .react,.node{
+    animation: rotateanime 2s alternate;
+
+}
+.project:hover .javascript{
+    animation: topanimate 2s alternate;
+}
+
+
 .project__sidebar{
 flex: 0.1;
 }
@@ -106,6 +115,23 @@ background-color: var(--green-color);
     max-height: 192px;
     object-fit: contain;
 }
+@keyframes rotateanime{
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes topanimate{
+    0%{
+        transform: translateY(-500%) scale(0);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
 @media (max-width:860px){
     .project{
         gap:0;
@@ -115,6 +141,7 @@ background-color: var(--green-color);
 
 @media (max-width:700px){
     .project{
+        gap:50px;
         flex-direction: column;
         padding-bottom: 20px;
     }

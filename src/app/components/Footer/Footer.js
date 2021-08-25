@@ -6,12 +6,12 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__left">
-                <Instagram/>
+                <Instagram />
                 <LinkedIn />
                 <GitHub />
             </div>
             <div className="footer__right">
-                All Rights Reserved
+                © All Rights Reserved
             </div>
         </div>
     )

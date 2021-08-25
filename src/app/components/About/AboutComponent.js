@@ -6,7 +6,8 @@ function AboutComponent() {
             <h2>About</h2>
             <h5> John</h5>
             <p>
-                High Profficency in Javascript,CSS,ReactJs,MongoDB,NodeJS
+                High Profficency in Javascript,CSS,ReactJs
+                ,MongoDB,NodeJS
 
                 Created Almost 40 Projects in Web
                 I am a human of profoundly creative soul

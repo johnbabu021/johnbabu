@@ -17,23 +17,38 @@
     text-align: end;
     color: var(--deep--gray);
 }
-.project__component:hover:after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    left:0;
-    border-radius: 20px;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1);
-    cursor: pointer;
 
+.project__component:hover .view__project{
+    opacity: 1;
 }
 
 
-.project__component:hover:before{
+.view__project{
     position: absolute;
-    left:25%;
-    content: "view Project";
-    color:black;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    left:8%;
+    border-radius: 25px;
+    height: 84%;
+    width: 84%;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    font-weight: 400;
+    transform: scale(1.2);
+        color: black;
+  
+}
+.view__project>p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:0.7;
+}
+.view__project>p>a{
+color:black;
+text-decoration: none;
+}
+.view__project>p>a>.MuiSvgIcon-root:hover{
+    color:var(--green-color) !important;
+    cursor: pointer !important;
 }

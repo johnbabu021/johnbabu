@@ -1,9 +1,15 @@
 import React from 'react'
 import './ProjectComponent.css'
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import GitHubIcon from '@material-ui/icons/GitHub';
 function NodeJsProjects() {
     return (
         <div className="project__component">
-            <img src="https://user-images.githubusercontent.com/58719884/120492015-58cac200-c3d7-11eb-87dd-52a58571b1bf.png" alt="" />
+            <img src="images/accident.png" alt="" />
+            <div className="view__project">
+            <p><a href="https://github.com/johnbabu021"><VisibilityIcon /></a>
+                    <a href="https://github.com/johnbabu021"><GitHubIcon /></a></p>
+            </div>
             <div className="text">
                 <h4>Accident<br /> Management</h4>
                 <p>NodeJS</p>

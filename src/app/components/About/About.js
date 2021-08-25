@@ -29,9 +29,9 @@ function About() {
         document.querySelector('.about__sidebar').style.display = "block"
         document.querySelector('.about__show').style.display = "none"
         document.querySelector('.img__text').style.display = "none"
-
-
     }
+
+
 
     return (
         <div className="about">

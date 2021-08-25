@@ -29,7 +29,6 @@
         text-overflow: ellipsis;
         overflow-wrap: break-word;
         word-wrap: break-word;
-        
        overflow-x: scroll;
     }
   
