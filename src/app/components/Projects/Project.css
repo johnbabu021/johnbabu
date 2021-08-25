@@ -125,10 +125,10 @@ background-color: var(--green-color);
 }
 @keyframes topanimate{
     0%{
-        transform: translateY(-500%) scale(0);
+        transform: translateX(-200%) scale(0);
     }
     100%{
-        transform: translateY(0%);
+        transform: translateX(0%);
     }
 }
 
