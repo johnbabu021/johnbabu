@@ -7,11 +7,11 @@
  gap:50px;
  color:white;
 }
-.project:hover .react,.node{
+ .react,.node{
     animation: rotateanime 2s alternate;
 
 }
-.project:hover .javascript{
+ .javascript{
     animation: topanimate 2s alternate;
 }
 
