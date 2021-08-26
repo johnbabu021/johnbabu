@@ -16,6 +16,11 @@ function Contact() {
                 From,
                 Message
             })
+            document.querySelector(".name").value = ""
+            document.querySelector(".name1").value = ""
+            document.querySelector(".name2").value = ""
+
+
 
         }
         catch (e) {
@@ -41,16 +46,16 @@ function Contact() {
                     <form onSubmit={handleSubmit(sendMessage)}>
                         {errors.Name && <p className="error">Name field is required</p>}
                         <input placeholder="Enter your name" type="text"
-                            {...register("Name", { required: true })}
+                            className="name" {...register("Name", { required: true })}
 
                         />
                         {errors.From && <p className="error">From Field is Required</p>}
                         <input placeholder="Enter your Email" type="email"
-                            {...register("From", { required: true })}
+                            className="name1"   {...register("From", { required: true })}
                         />
                         {errors.Message && <p className="error">Message field is required</p>}
                         <textarea placeholder="Enter your Message"
-                            type="text"
+                            className="name2" type="text"
                             {...register("Message", { required: true })}
 
                         ></textarea>
