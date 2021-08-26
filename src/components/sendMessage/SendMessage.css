@@ -1,0 +1,55 @@
+.close__icon{
+    background-color:var(--morph_color);
+border-radius: 50%;
+padding: 10px;
+display: grid;
+place-items: center;
+
+}
+.close__icon>.MuiSvgIcon-root{
+    color:white!important;
+    cursor: pointer;
+}
+.sendMessageIcon{
+  
+    display: flex;
+    flex-direction: column;
+}
+.message__box{
+    position: fixed;
+    top:20%;
+    left:40%;
+    background-color: black;
+    display:flex;
+    align-items: center;  
+    flex-direction: column;
+      border-radius: 20px;
+    border:20px;
+    padding:20px 50px;
+
+}
+.message__box>.MuiSvgIcon-root{
+    cursor: pointer;
+    align-self: flex-end;
+}
+.message__box>form{
+    display: flex;
+    flex-direction: column;
+    margin:50px 0px;
+}
+.message__box>form>input{
+   margin:20px 0;
+   border:none;
+   padding: 20px 15px;
+   border-radius: 20px;
+   outline:none;
+}
+.send{
+    border:2px solid var(--morph_color) !important;
+    color:white !important;
+}
+.error{
+    color:red;
+    margin: 0;
+    padding: 0;
+}

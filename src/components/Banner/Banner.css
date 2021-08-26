@@ -56,3 +56,9 @@ border:2px solid var(--morph_color)
        flex-direction:column;
    }
 }
+.close__container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}

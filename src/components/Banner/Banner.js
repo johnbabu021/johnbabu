@@ -1,4 +1,5 @@
 import React from 'react'
+import SendMessage from '../sendMessage/SendMessage'
 import './Banner.css'
 
 function Banner() {
@@ -18,7 +19,9 @@ function Banner() {
 
                 </div>
             </div>
-
+            <div className="close__container" >
+                <SendMessage />
+            </div>
 
         </div>
     )

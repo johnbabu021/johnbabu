@@ -3,16 +3,25 @@ import React from 'react'
 import './Contact.css'
 import ScrollReveal from 'scrollreveal'
 import messagesCol from '../../firebase'
+import { useForm } from 'react-hook-form'
 import { addDoc } from 'firebase/firestore/lite'
+
 function Contact() {
-    const sendMessage = async () => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    const sendMessage = async ({ Name, From, Message }) => {
         try {
             await addDoc(messagesCol, {
-                name: "jin-yang"
+                Name,
+                From,
+                Message
             })
+
         }
         catch (e) {
         }
+
+
     }
     var slideLeft = {
         origin: 'top',
@@ -29,11 +38,23 @@ function Contact() {
             <div className="contact__left">
                 <h1>Contact Me</h1>
                 <div className="contact__page">
-                    <form>
-                        <input placeholder="Enter your name" />
-                        <input placeholder="Enter your Email" />
-                        <textarea placeholder="Enter your Message"></textarea>
-                        <Button className="send__btn" onClick={sendMessage}>SEND message</Button>
+                    <form onSubmit={handleSubmit(sendMessage)}>
+                        {errors.Name && <p className="error">Name field is required</p>}
+                        <input placeholder="Enter your name" type="text"
+                            {...register("Name", { required: true })}
+
+                        />
+                        {errors.From && <p className="error">From Field is Required</p>}
+                        <input placeholder="Enter your Email" type="email"
+                            {...register("From", { required: true })}
+                        />
+                        {errors.Message && <p className="error">Message field is required</p>}
+                        <textarea placeholder="Enter your Message"
+                            type="text"
+                            {...register("Message", { required: true })}
+
+                        ></textarea>
+                        <Button type="submit" className="send__btn">SEND message</Button>
 
                     </form>
                 </div>
