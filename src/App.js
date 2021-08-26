@@ -3,8 +3,8 @@ import './App.css';
 import Home from './pages/Home';
 import ROUTES from './constants/Routes'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './app/components/Header/Header';
-import Footer from './app/components/Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Portfolio from './pages/Portfolio';
 
 function App() {

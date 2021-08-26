@@ -1,7 +1,7 @@
 import React from 'react'
-import Contact from '../app/components/Contact/Contact'
-import Description from '../app/components/Description/Description'
-import Section from '../app/components/Section/Section'
+import Contact from '../components/Contact/Contact'
+import Description from '../components/Description/Description'
+import Section from '../components/Section/Section'
 import './Home.css'
 function Home() {
     return (

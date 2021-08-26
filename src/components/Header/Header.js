@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import './Header.css'
-import ROUTES from '../../../constants/Routes'
+import ROUTES from '../../constants/Routes'
 function Header() {
     const history = useHistory()
     const [hamburger, setHamburger] = useState(false)
