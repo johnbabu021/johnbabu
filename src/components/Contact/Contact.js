@@ -49,7 +49,7 @@ function Contact() {
                             className="name" {...register("Name", { required: true })}
 
                         />
-                        {errors.From && <p className="error">From Field is Required</p>}
+                        {errors.From && <p className="error">mail is Required</p>}
                         <input placeholder="Enter your Email" type="email"
                             className="name1"   {...register("From", { required: true })}
                         />

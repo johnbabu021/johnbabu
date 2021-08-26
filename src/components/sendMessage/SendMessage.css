@@ -16,9 +16,8 @@ place-items: center;
     flex-direction: column;
 }
 .message__box{
-    position: fixed;
-    top:20%;
-    left:40%;
+   display:grid;
+   place-items: center;
     background-color: black;
     display:flex;
     align-items: center;  
@@ -39,8 +38,12 @@ place-items: center;
 }
 .message__box>form>input{
    margin:20px 0;
-   border:none;
-   padding: 20px 15px;
+   background-color: black;
+   color:rgb(212, 216, 222);
+   padding: 15px 30px;
+   border-left-color: rgb(142, 196, 203);
+   border-right-color:rgb(142, 196, 203);
+   border-top-color: rgb(142, 196, 203);
    border-radius: 20px;
    outline:none;
 }

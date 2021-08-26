@@ -38,7 +38,7 @@ function SendMessage() {
 
                             {...register("Name", { required: true })}
                         />
-                        {errors.Name && <p className="error">message is required</p>}
+                        {errors.Name && <p className="error">mail is required</p>}
 
                         <input placeholder="Enter your mail" type="email"
                             className="name1" {...register("Mail", { required: true })}
