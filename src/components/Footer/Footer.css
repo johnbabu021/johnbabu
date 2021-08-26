@@ -23,11 +23,18 @@ color:var(--gray--color)
     display: flex;
     justify-content: space-between;
     width: 10rem;
+    color: gray;
+
 }
-.footer__left>.MuiSvgIcon-root{
+.footer__left>a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer__left>a>.MuiSvgIcon-root{
     transition:0.4s ease-in
 }
-.footer__left>.MuiSvgIcon-root:hover{
+.footer__left>a>.MuiSvgIcon-root:hover{
     color:var(--morph_color);
 
 }
