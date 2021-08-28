@@ -7,7 +7,7 @@ function JavascriptProjects() {
         <div className="project__component">
             <img src="images/quiz.png" alt="" />
             <div className="view__project">
-                <p><a href="https://github.com/johnbabu021"><VisibilityIcon /></a>
+                <p><a href="https://johnbabu021.github.io/quiz-app/"><VisibilityIcon /></a>
                     <a href="https://github.com/johnbabu021"><GitHubIcon /></a></p>
             </div>
             <div className="text">

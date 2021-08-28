@@ -7,7 +7,7 @@ function ReactProjectThree() {
         <div className="project__component">
             <img src="images/tesla.png" alt="" />
             <div className="view__project">
-                <p><a href="https://github.com/johnbabu021"><VisibilityIcon /></a>
+                <p><a href="https://tesla-kohl.vercel.app/"><VisibilityIcon /></a>
                     <a href="https://github.com/johnbabu021/tesla"><GitHubIcon /></a></p>
             </div>
 
