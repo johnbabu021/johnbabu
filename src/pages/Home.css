@@ -1,3 +1,4 @@
 .portfolio{
     overflow-x:hidden;
+    background-color:var(--deep-gray);
 }
