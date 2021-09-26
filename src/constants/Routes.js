@@ -1,4 +1,7 @@
 module.exports = {
     DASHBOARD: '/',
-    PORTFOLIO: '/portfolio'
+    PORTFOLIO: '/portfolio',
+    CONTACT: '/contact',
+    BLOG: "/blog"
+
 }

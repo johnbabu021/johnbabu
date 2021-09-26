@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Portfolio from './pages/Portfolio';
+import ContactPage from './pages/ContactPage';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           <Route path={ROUTES.PORTFOLIO} >
             <Portfolio />
           </Route>
+          <Route path={ROUTES.CONTACT}>
+            <ContactPage />
+          </Route>
+          <Route path={ROUTES.BLOG} component={Blog} />
         </Switch>
 
 

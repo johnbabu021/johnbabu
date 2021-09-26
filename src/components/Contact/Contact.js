@@ -64,10 +64,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-            <div className="contact__right">
-                <img src="images/mobile.svg" alt=""></img>
 
-            </div>
         </div>
     )
 }

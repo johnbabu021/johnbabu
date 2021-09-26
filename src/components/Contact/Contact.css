@@ -4,15 +4,19 @@
     margin-top:50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 121px;
 }
 .contact__left{
-    flex:0.7;
+    flex:0.3;
+    border: 2px solid white;
+    /* box-shadow: 0 1px 25px rgb(27 31 35 / 15%) !important; */
+    margin-left:150px;
 }
 .contact__left>h1{
 color:var(--deep--gray);
+font-weight: 700;
 }
 .contact__right{
     flex:0.3;
@@ -47,6 +51,9 @@ align-items: center;
 }
 .contact__page>form>textarea{
     padding: 0 20px !important;
+    min-height: 10rem;
+    min-width: 10rem;
+
 padding: 40px 20px;
 overflow-wrap: break-word;
 height: 202px;

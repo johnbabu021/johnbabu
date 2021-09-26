@@ -7,8 +7,8 @@ function Footer() {
         <div className="footer">
             <div className="footer__left">
                 <a href="https://www.instagram.com/_.joh.n/"><Instagram /></a>
-                <a href="https://github.com/johnbabu021"><LinkedIn /></a>
-                <a href="https://www.linkedin.com/in/john-babu-3931a319a/"><GitHub /></a>
+                <a href="https://www.linkedin.com/in/john-babu-3931a319a/"><LinkedIn /></a>
+                <a href="https://github.com/johnbabu021"><GitHub /></a>
             </div>
             <div className="footer__right">
                 © All Rights Reserved

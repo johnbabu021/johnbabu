@@ -8,7 +8,8 @@
   --deep--gray:rgb(57, 62, 70);
   --border-color:rgba(110,0,255,0.5);
   --green-color:#3fbf86;
-  --background-color:linear-gradient(130deg,#27292e,#121213)
+  --background-color:linear-gradient(130deg,#27292e,#121213);
+--common-color:rgba(91,32,182,1);
 }
 
 
