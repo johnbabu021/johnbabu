@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import './Header.css'
 import ROUTES from '../../constants/Routes'
+
 function Header() {
+
+    const sidebar = useRef(null)
     const history = useHistory()
     const [hamburger, setHamburger] = useState(false)
     const burgerControler = () => {
@@ -19,11 +22,23 @@ function Header() {
     const largeBtn = (btnClick) => {
         history.push(btnClick)
     }
+    useEffect(() => {
+        function clickHandler(e) {
+            if (hamburger) {
+                if (!sidebar.current.contains(e.target)) {
+                    setHamburger(false)
+                }
+            }
+
+        }
+        document.addEventListener('click', clickHandler)
+
+    }, [hamburger])
     return (
-        <div className="header">
+        <div className="header" ref={sidebar}>
 
             <div className="logo__container">
-                <img className="header__logo" src="images/me.jpeg" alt="" onClick={() => history.push(ROUTES.DASHBOARD)} />)
+                <img className="header__logo" src="images/me.jpeg" alt="" onClick={() => history.push(ROUTES.DASHBOARD)} />
 
             </div>
 
@@ -48,7 +63,7 @@ function Header() {
 
 
             </div>
-            <div className={`ham ${hamburger ? 'ham__item' : 'trans'}`}>
+            <div className={`ham ${hamburger ? 'ham__item' : 'trans'}`} >
                 <p
                     onClick={() => pageBtn(ROUTES.DASHBOARD)}
                 >Home</p>

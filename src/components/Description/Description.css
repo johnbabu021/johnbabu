@@ -40,3 +40,8 @@ transform: scale(0.99);
 .right{
     margin-left: auto;
 }
+@media (max-width:900px){
+    .description__info{
+        height:250px;
+    }
+}

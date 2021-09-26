@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage';
 import Blog from './pages/Blog';
 
 function App() {
+
   return (
     <div className="App">
 
