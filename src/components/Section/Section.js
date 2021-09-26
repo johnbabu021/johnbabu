@@ -29,9 +29,11 @@ function Section() {
     return (
         <div className="section">
             <div className="section__text__area">
-                <h2>Hello I'm John</h2>
-                <p className="paragraph">I'm a Full Stack Developer who helps
-                    <br></br>to turn ideas into accessible experiences.</p>
+                <div className="section__img__container">
+                    <img src="images/me.jpeg" alt="" />
+                </div>
+                <h2>John</h2>
+                <p className="paragraph">Founder and CEO of <span>Spulber</span>.</p>
             </div>
             <div className="section__img__area">
 

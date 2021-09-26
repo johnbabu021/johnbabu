@@ -1,11 +1,12 @@
 .project{
- min-height:100vh;  
+ min-height:81vh;  
  width:100vw;
  background-color: var(--deep--gray); 
  display: flex;
  align-items: center;
  gap:50px;
  color:white;
+ padding-left: 50px;
 }
  .react,.node{
     animation: rotateanime 2s alternate;

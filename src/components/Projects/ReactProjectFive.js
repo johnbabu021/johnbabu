@@ -6,7 +6,7 @@ function ReactProjectFive() {
     return (
         <div className="project__component">
             <img src="images/spotify.png" alt="" />
-            <div className="view__project">
+            <div className="view__project pro">
                 <p><a href="https://spotify-xi-jet.vercel.app/"><VisibilityIcon /></a>
                     <a href="https://github.com/johnbabu021/spotify"><GitHubIcon /></a></p>
             </div>

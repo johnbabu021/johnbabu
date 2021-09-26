@@ -28,27 +28,34 @@
     display: flex;
     align-items: center;
     left:8%;
+    justify-content: space-around;
     border-radius: 25px;
     height: 84%;
+    gap:20px !important;
     width: 84%;
     background-color: rgba(0,0,0,0.2);
     opacity: 0;
     font-weight: 400;
     transform: scale(1.2);
         color: black;
+
   
 }
-.view__project>p{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex:0.7;
+/* .pro{
+    position: relative;
 }
+.pro>p{
+    position:absolute;
+    display: flex;
+    gap:30px;
+    justify-content: space-around;
+    align-items: center;
+} */
 .view__project>p>a{
 color:black;
 text-decoration: none;
 }
 .view__project>p>a>.MuiSvgIcon-root:hover{
-    color:var(--green-color) !important;
+    color:var(--common-color) !important;
     cursor: pointer !important;
 }

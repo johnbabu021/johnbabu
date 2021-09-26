@@ -1,8 +1,8 @@
 .banner{
     width: 100vw;
-    height: 70vh;
-    background-color: var(--deep--gray);
-    color: rgb(121, 120, 120);
+    height: 40vh;
+    background-color: white;
+       color: var(--common-color);
     margin:0;
     overflow-x:hidden;
 
@@ -12,7 +12,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-color: white;
+color:black;
 margin:auto ;
 font-size: 25px;
 text-transform: uppercase;
@@ -21,8 +21,9 @@ line-height: 2rem;
 padding-top: 5rem;
 }
 .get__btn{
-    background-color: var(--morph_color) ;
-    color: white ;
+ 
+    color: black ;
+    box-shadow: 2px 2px 15px  rgba(0,0,0,0.2);
     padding: 8px ;
     border-radius: 5px;
     margin:50px;
@@ -31,12 +32,16 @@ padding-top: 5rem;
     text-decoration: none;
     transition: 0.2s ease-out;
     border:2px solid transparent;
-
+background-color: transparent;
+transition: 0.5s ease-in-out;
 }
 .get__btn:hover{
 background-color: transparent;
-border:2px solid var(--morph_color)
+transform:scale(0.99);
 
+}
+.get__btn:active{
+    transform:scale(0.8);
 }
 .mail__send{
     display:flex;

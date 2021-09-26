@@ -7,9 +7,11 @@ align-items: center;
 position: sticky;
 top:0;
 height:50px;
-background-color: white;
 z-index: 999;
-box-shadow: 0 1px 2px var(--shadow--strong);
+color:var(--common-color);
+background-color: white;
+font-weight: 700;
+box-shadow: 0 2px 10px 2px var(--shadow--strong);
 
 }
 .logo__container{
@@ -24,6 +26,8 @@ flex:0.3;
     object-fit: cover;
     height: 30px;
     cursor:pointer;
+    border: none;
+outline: none;
     border-radius: 50%;
 }
 .pages{
@@ -35,12 +39,12 @@ flex:0.3;
 .pages>p{
     cursor: pointer;
     transition:0.2s ease-in-out;
-    border-color: var(--morph_color);
+    border-color: var(--common-color);
     border:none;
     border:2px solid transparent;
 }
 .pages>p:hover{
-    border-bottom:2px solid var(--morph_color);
+    border-bottom:2px solid var(--common-color);
 }
 
 .hamburger{

@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollReveal from 'scrollreveal'
-
+import './Description.css'
 function DescriptionComponents({ right }) {
     var slideLeft = {
         origin: 'top',
