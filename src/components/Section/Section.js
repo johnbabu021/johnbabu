@@ -33,7 +33,7 @@ function Section() {
                     <img src="images/me.jpeg" alt="" />
                 </div>
                 <h2>John</h2>
-                <p className="paragraph">Founder and CEO of <span>Spulber</span>.</p>
+                <p className="paragraph">John Babu a passionate Web Developer,Hardworking</p>
             </div>
             <div className="section__img__area">
 
