@@ -5,13 +5,13 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function ReactProjectTwo() {
     return (
         <div className="project__component">
-            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="" />
+            <img src="https://github.com/johnbabu021/PlayOn/raw/master/public/assets/images/playon.svg" alt="" />
             <div className="view__project">
-                <p><a href="https://fir-122f6.web.app/"><VisibilityIcon /></a>
-                    <a href="https://github.com/johnbabu021/gmail"><GitHubIcon /></a></p>
+                <p><a href="https://play-on.vercel.app"><VisibilityIcon /></a>
+                    <a href="https://github.com/johnbabu021/playon"><GitHubIcon /></a></p>
             </div>
             <div className="text">
-                <h4>Gmail Clone</h4>
+                <h4>PlayOn</h4>
                 <p>ReactJS</p>
             </div>
         </div>

@@ -12,6 +12,7 @@
 }
 .project__component>img{
     max-width:172px;
+    align-self: center;
 }
 .text{
     text-align: end;
