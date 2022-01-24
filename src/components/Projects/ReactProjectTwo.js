@@ -12,7 +12,7 @@ function ReactProjectTwo() {
             </div>
             <div className="text">
                 <h4>PlayOn</h4>
-                <p>ReactJS</p>
+                <p>NextJS</p>
             </div>
         </div>
     )
