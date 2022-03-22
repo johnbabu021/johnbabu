@@ -12,7 +12,7 @@ function Header() {
         setHamburger(!hamburger)
     }
     const openPdf = () => {
-        window.open('/pdf/pdfresume.pdf')
+        window.open('/pdf/JohnBabu_React_js_Resume.pdf')
         return true;
     }
     const pageBtn = (btnClick) => {
@@ -52,7 +52,7 @@ function Header() {
                 >Works</p>
                 <p onClick={() => largeBtn(ROUTES.BLOG)}>Bolg</p>
                 <p onClick={() => largeBtn(ROUTES.CONTACT)}>Contact</p>
-                <p onClick={() => window.open('/pdf/pdfresume.pdf')}>Resume</p>
+                <p onClick={() => window.open('/pdf/JohnBabu_React_js_Resume.pdf')}>Resume</p>
 
             </div>
 

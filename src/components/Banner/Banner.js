@@ -5,7 +5,7 @@ import './Banner.css'
 function Banner() {
 
     const pdfOpen = () => {
-        window.open("/pdf/pdfresume.pdf");
+        window.open("/pdf/JohnBabu_React_js_Resume.pdf");
         return true
     }
 
